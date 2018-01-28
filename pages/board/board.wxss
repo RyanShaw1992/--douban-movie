@@ -1,0 +1,45 @@
+.slide swiper {
+    height: 400rpx;
+}
+
+.slide-image {
+    height: 100%;
+    width: 100%;
+}
+
+/**中间文字说明**/
+.header {
+  padding: 40rpx 80rpx 20rpx;
+}
+.title {
+  display: block;
+  font-size: 50rpx;
+}
+.description {
+  display: block;
+  margin-top: 30rpx;
+  color: #888;
+  font-size: 28rpx;
+}
+
+/**首页下方盒子**/
+.board {
+    display: flex;
+    flex-direction: column;
+    padding: 30rpx;
+}
+.board-item {
+    display: flex;
+    flex: 1;
+    cursor: pointer;
+    border: 1rpx solid #eee;
+    margin-top: 20rpx;
+    padding: 30rpx;
+}
+.board-item text {
+    flex: 1;
+}
+.board-item image {
+    width: 40rpx;
+    height: 40rpx;    
+}

@@ -1,0 +1,41 @@
+<view class="container">
+    <view class="slide">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}" wx:key="key">
+                <swiper-item>
+                <image src="{{item}}" class="slide-image" width="355" height="150"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="header">
+            <text class="title">豆瓣电影榜单集合</text>
+            <text class="description">最新，最IN的影视信息收集~</text>
+        </view>
+    </view>
+    <view class="board">
+        <navigator url="../list/list?type=in_theaters&name=正在热映" hover-class='none'>
+            <view class="board-item">
+                <text>正在热映</text>
+                <image src="../../images/arrowright.png" mode="aspectFill"/>
+            </view>
+        </navigator>
+        <navigator url="../list/list?type=coming_soon&name=即将上映" hover-class='none'>
+            <view class="board-item">
+                <text>即将上映</text>
+                <image src="../../images/arrowright.png" mode="aspectFill"/>
+            </view>
+        </navigator>
+        <navigator url="../list/list?type=top250&name=Top250" hover-class='none'>
+            <view class="board-item">
+                <text>Top250</text>
+                <image src="../../images/arrowright.png" mode="aspectFill"/>
+            </view>
+        </navigator>
+        <navigator url="../list/list?type=weekly&name=口碑榜" hover-class='none'>
+            <view class="board-item">
+                <text>口碑榜</text>
+                <image src="../../images/arrowright.png" mode="aspectFill"/>
+            </view>
+        </navigator>
+    </view>
+</view>
